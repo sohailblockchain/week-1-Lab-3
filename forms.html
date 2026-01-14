@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Forms + Validation</title>
+  </head>
+  <body>
+    <!-- Form example with validation-ready input types. -->
+    <header>
+      <h1>HTML5 Forms + Validation</h1>
+      <p>Use built-in input types to help users submit clean data.</p>
+    </header>
+
+    <main>
+      <!-- Basic form layout with common HTML5 input types. -->
+      <form>
+        <!-- Labels connect to inputs for accessibility. -->
+        <label for="name">Full Name</label>
+        <!-- Text input for a person's name. -->
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">Email</label>
+        <!-- Email type checks for a valid email format. -->
+        <input id="email" name="email" type="email" required />
+
+        <label for="age">Age</label>
+        <!-- Number input with min/max limits. -->
+        <input id="age" name="age" type="number" min="10" max="80" />
+
+        <label for="site">Portfolio</label>
+        <!-- URL type expects a link starting with http or https. -->
+        <input id="site" name="site" type="url" placeholder="https://example.com" />
+
+        <!-- Required ensures the form cannot submit without values. -->
+        <button type="submit">Submit</button>
+      </form>
+
+      <section>
+        <h2>Teacher Notes</h2>
+        <ul>
+          <li>Use <code>required</code> for mandatory fields.</li>
+          <li><code>type="email"</code> validates the email format.</li>
+          <li><code>min</code> and <code>max</code> restrict number inputs.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
